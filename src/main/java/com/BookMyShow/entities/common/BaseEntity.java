@@ -1,4 +1,4 @@
-package com.BookMyShow.entities;
+package com.BookMyShow.entities.common;
 
 import jakarta.persistence.*;
 import lombok.Data;
