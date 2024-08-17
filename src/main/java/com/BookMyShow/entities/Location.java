@@ -9,7 +9,7 @@ import lombok.EqualsAndHashCode;
 @Data
 @EqualsAndHashCode(callSuper = true)
 @Entity
-@Table(name = "address")
+@Table(name = "location")
 public class Location extends BaseEntity {
 
     private String streetAddress;
