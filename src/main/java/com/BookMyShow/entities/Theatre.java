@@ -21,4 +21,7 @@ public class Theatre extends BaseEntity {
 
     @OneToMany(mappedBy = "theatre", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private List<Hall> hall;
+
+    @OneToMany(mappedBy = "theatre")
+    private List<Show> shows;
 }

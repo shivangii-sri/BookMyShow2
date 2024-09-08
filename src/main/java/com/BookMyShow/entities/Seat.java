@@ -18,7 +18,7 @@ public class Seat extends BaseEntity {
 
     private String seatNumber;
 
-    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @ManyToOne(fetch = FetchType.EAGER)
     private Hall hall;
 
     private SeatType seatType;

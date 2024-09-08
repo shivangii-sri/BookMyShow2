@@ -15,9 +15,12 @@ public class Hall extends BaseEntity {
 
     private String name;
 
-    @ManyToOne(fetch = FetchType.EAGER)// cascade = CascadeType.ALL
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)// cascade = CascadeType.ALL
     private Theatre theatre;
 
     @OneToMany(mappedBy = "hall")
     private List<HallSeat> hallSeats;
+
+    @OneToMany(mappedBy = "hall")
+    private List<Show> shows;
 }
