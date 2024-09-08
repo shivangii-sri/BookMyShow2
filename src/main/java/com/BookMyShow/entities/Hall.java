@@ -22,5 +22,5 @@ public class Hall extends BaseEntity {
     private List<HallSeat> hallSeats;
 
     @OneToMany(mappedBy = "hall")
-    private List<Show> shows;
+    private List<Shows> shows;
 }

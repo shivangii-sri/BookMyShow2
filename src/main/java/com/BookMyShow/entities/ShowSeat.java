@@ -11,6 +11,6 @@ import lombok.EqualsAndHashCode;
 public class ShowSeat extends Seat{
 
     @ManyToOne(fetch = FetchType.EAGER)
-    private Show show;
+    private Shows show;
     private Boolean isActive;
 }

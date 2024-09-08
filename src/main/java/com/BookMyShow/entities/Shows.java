@@ -11,8 +11,8 @@ import java.util.List;
 @Data
 @EqualsAndHashCode(callSuper = true)
 @Entity
-@Table(name = "show")
-public class Show extends BaseEntity {
+@Table(name = "shows")
+public class Shows extends BaseEntity {
 
     @ManyToOne(fetch = FetchType.LAZY)
     private Movie movie;

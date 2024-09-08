@@ -21,6 +21,6 @@ public class Movie extends BaseEntity {
     private boolean isActive;
 
     @OneToMany(mappedBy = "movie")
-    private List<Show> shows;
+    private List<Shows> shows;
     //private List<String> genre;
 }

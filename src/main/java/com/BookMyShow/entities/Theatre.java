@@ -23,5 +23,5 @@ public class Theatre extends BaseEntity {
     private List<Hall> hall;
 
     @OneToMany(mappedBy = "theatre")
-    private List<Show> shows;
+    private List<Shows> shows;
 }
