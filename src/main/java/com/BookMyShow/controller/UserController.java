@@ -4,10 +4,7 @@ import com.BookMyShow.entities.User;
 import com.BookMyShow.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.awt.*;
 
@@ -23,4 +20,15 @@ public class UserController {
     public void createUser(@RequestBody User user){
         userService.createUser(user);
     }
+
+    @PutMapping(value = "update-user")
+    public void updateUser(@RequestBody User user) {
+        userService.updateUser(user);
+    }
+
+    @GetMapping(value = "/{userId}")
+    public User getUserById(@PathVariable("userId") Long userId){
+        return userService.getUserById(userId);
+    }
+
 }
